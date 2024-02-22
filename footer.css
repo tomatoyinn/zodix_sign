@@ -1,0 +1,100 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+.footer .container{
+	background-color: blue;
+}
+.row{
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 100px;
+}
+.footer-col ul{
+	list-style: none;
+}
+.footer-col h4{
+	color: white;
+	margin-bottom: 25px;
+	font-size: 22px;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	width: 70px;
+	height: 2px;
+	position: absolute;
+	background-color: dodgerblue;
+	bottom: -10px;
+}
+.footer-col ul li{
+	padding: 10px 0;
+}
+.footer-col ul li a{
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+	opacity: 0.7;
+	transition: 0.5s;
+}
+.footer-col ul li a:hover{
+	opacity: 1;
+	text-shadow: 0 0 7px white;
+}
+.footer-col input{
+	border: none;
+	width: 250px;
+	height: 45px;
+	display: block;
+	padding-left: 20px;
+	margin: 14px 0;
+}
+.footer-col textarea{
+	border: none;
+	width: 250px;
+	height: 60px;
+	display: block;
+	margin: 14px 0;
+}
+.footer-col .inputsubmit{
+	padding: 10px 20px;
+	text-align: center;
+	width: 100px;
+	background-color: dodgerblue;
+	border: none;
+	color: white;
+}
+.inputsubmit:hover{
+	box-shadow: 0 0 20px royalblue;
+}
+.col p{
+	color: white;
+}
+.row hr{
+	opacity: 0.7;
+}
+.row .socialicon i{
+	display: inline-block;
+	color: white;
+	font-size: 20px;
+	margin: 0 15px;
+	transition: 0.5s;
+}
+.row .socialicon i:hover{
+	color: dodgerblue;
+}
+@media (max-width: 600px){
+	footer .row{
+		flex-direction: column;
+		padding: 20px 30px;
+	}
+	footer .footer-col ul{
+		margin-left: 20px;
+		margin-bottom: 20px;
+	}
+	.footer-col input{
+		width: 100%;
+	}
+}
